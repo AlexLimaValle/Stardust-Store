@@ -1,0 +1,78 @@
+.oferts{
+    width: 100%;
+    height: auto;
+    .oferts__h2{
+        width: 100%;
+        height: auto;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .oferts__product{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center;
+        .oferts__ofertas{
+            width: 90%;
+            height: 60vh;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 16% 45% 10% 15% 7% 7%;
+            grid-template-areas: 
+            "logo logo"
+            "imagen imagen"
+            "h2 h2"
+            "descrip descrip"
+            "precio boton"
+            "ofert boton"
+            ;
+            margin-top: 40px;
+            border-radius: 1%;
+            border-top-right-radius: 15%;
+            border-bottom-left-radius: 15%;
+            box-shadow: 0px 0px 18px 2px #949191c5;
+            position: relative;
+            .oferts__ofertas-logo{
+                grid-area: logo;
+                width: 36%;
+                height: 82%;
+            }
+            .oferts__ofertas-img{
+                grid-area: imagen;
+                width: 90%;
+                height: 100%;
+            }
+            .oferts__ofertas-h2{
+                grid-area: h2;
+            }
+            .oferts__ofertas-description{
+                grid-area: descrip;
+                text-align: center;
+            }
+            .oferts__ofertas-precio{
+                grid-area: precio;
+            }
+            .oferts__ofertas-oferta{
+                grid-area: ofert;
+            }
+            .oferts__ofertas-button{
+                grid-area: boton;
+                width: 90%;
+                height: 70%;
+            }
+            .oferts__ofertas-letrero{
+                position:absolute;
+                width: 30%;
+                height: 15%;
+                top:-15px;
+                left: -15px;
+                z-index: 1;
+                transform: rotate(-10deg);
+                filter: drop-shadow(1px 1px 30px rgb(46, 240, 21));
+            }
+        }
+    }
+}
