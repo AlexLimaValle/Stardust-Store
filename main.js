@@ -71,6 +71,15 @@ const laptops = [
         tipo:"ofertas",
         img:"https://th.bing.com/th/id/R.761a58604565625ae16ebb195e476e95?rik=OSqDI5%2b99LLcFw&pid=ImgRaw&r=0",
     },
+    {
+        name:"DELL INSPIRON 15 3511",
+        descripcion:'i7 1165G7 - 32 GB RAM - 1 TB SSD - PANTALLA 15.6 FULL HD TECLADO ESPAÑOL - PROCESADOR 11VA GENERACION - PLACA INTEGRADA IRIS XE',
+        marca:"dell",
+        precio:270000,
+        oferta:300000,
+        tipo:"general",
+        img:"https://th.bing.com/th/id/R.761a58604565625ae16ebb195e476e95?rik=OSqDI5%2b99LLcFw&pid=ImgRaw&r=0",
+    },
 
 ]
 
@@ -190,7 +199,7 @@ const presentacion = (tipo,fragmento,clase)=>{
             <p class="${clase}__${tipo}-description">${descripcion}</p>
             <p class="${clase}__${tipo}-precio">$ ${precio}</p>
             <p class="${clase}__${tipo}-oferta">$ ${oferta}</p>
-            <button class="${clase}__${tipo}-button">Comprar</button>
+            <button class="${clase}__${tipo}-button">Agregar a carrito</button>
             ${anucioDeOfertas(tipo,clase)}
         `;
         fragmento.appendChild(product);

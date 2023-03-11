@@ -356,6 +356,14 @@
   grid-area: boton;
   width: 90%;
   height: 70%;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px 2px rgb(138, 134, 134), inset 5px 2px 20px 0px rgb(182, 184, 182);
+}
+.oferts .oferts__product .oferts__ofertas .oferts__ofertas-button:hover {
+  background-color: rgba(2, 2, 2, 0.137);
 }
 .oferts .oferts__product .oferts__ofertas .oferts__ofertas-letrero {
   position: absolute;
